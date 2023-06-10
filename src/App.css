@@ -1,39 +1,86 @@
-.App {
-  text-align: center;
+:root {
+  --brand-light-color: #D3D3D3;
+  --brand-middle-color: #FF9966;
+  --brand-dark-color: #964B00;
+  --brand-gradient: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color), var(--brand-light-color));
+  --background-image: linear-gradient(#cec8ff, white);
+  --background-w-opacity: rgba(0, 0, 0, 0.5);
+  --body-font: "Open Sans", sans-serif;
+  --headings-font: "Lobster", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: var(--body-font)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: var(--headings-font)
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+h2 {
+  color: #3046c5;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.card-img-overlay .card-title {
+  color: white;
+  background-color: var(--background-w-opacity);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-image: var(--background-image);
+  padding: 20px 0;
+  margin-top: 2rem;
+}
+
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.navbar-dark {
+  background-color: #901cad;
+  background-image: var(--brand-gradient);
+  margin-bottom: 2rem;
+  min-height: 8rem;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
 }
