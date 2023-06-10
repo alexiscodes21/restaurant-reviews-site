@@ -1,39 +1,39 @@
-import bootStrapLogo from '../assets/img/bootstrap-logo.png';
-import gitLogo from '../assets/img/git-logo.png';
-import mongoLogo from '../assets/img/mongo-logo.png';
-import nodeLogo from '../assets/img/node-logo.png';
+import greenEarthCoopLogo from "../assets/img/green-earth-co-op.png";
+import compassionatePawsAnimalRescueLogo from "../assets/img/compassionate-paws-animal-rescue.png";
+import plantBasedFitnessStudio from "../assets/img/plant-based-fitness-studio.png";
+import sustainableLivingAlliance from "../assets/img/sustainable-living-alliance.png";
 
 export const PARTNERS = [
-    {
-        id: 0,
-        name: 'Bootstrap Outfitters',
-        image: bootStrapLogo,
-        featured: false,
-        description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
-    },
-    {
-        id: 1,
-        name: 'Git Out Expeditions',
-        image: gitLogo,
-        featured: false,
-        description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
-    },
-    {
-        id: 2,
-        name: 'Mongo Fly Shop',
-        image: mongoLogo,
-        featured: false,
-        description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
-    },
-    {
-        id: 3,
-        name: 'Node Outdoor Apparel',
-        image: nodeLogo,
-        featured: true,
-        description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
-    }
+  {
+    id: 0,
+    name: "Green Earth Co-op",
+    image: greenEarthCoopLogo,
+    featured: false,
+    description:
+      "A local organic farming cooperative that supplies fresh, seasonal produce and herbs to Plantopia. They share a commitment to sustainable agriculture and promote a greener community.",
+  },
+  {
+    id: 1,
+    name: "Compassionate Paws Animal Rescue",
+    image: compassionatePawsAnimalRescueLogo,
+    featured: false,
+    description:
+      "A nearby animal rescue organization that collaborates with Plantopia to host adoption events and raise awareness about a plant-based lifestyle and animal welfare.",
+  },
+  {
+    id: 2,
+    name: "Plant-based Fitness Studio",
+    image: plantBasedFitnessStudio,
+    featured: false,
+    description:
+      "A fitness studio in the community that focuses on plant-based nutrition and exercise. Plantopia partners with them to provide special offers and promote a healthy, plant-powered lifestyle.",
+  },
+  {
+    id: 3,
+    name: "Sustainable Living Alliance",
+    image: sustainableLivingAlliance,
+    featured: true,
+    description:
+      "A local nonprofit organization dedicated to promoting sustainable living practices. Plantopia works closely with them to organize educational workshops and events focused on plant-based cooking and eco-friendly practices.",
+  },
 ];
