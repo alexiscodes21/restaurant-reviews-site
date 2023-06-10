@@ -1,41 +1,38 @@
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
-//Photo by Jonny Caspari on Unsplash
-import weedsImg from '../assets/img/weeds.jpg';
-// Photo by LoboStudio Hamburg on Unsplash
-import bootsImg from '../assets/img/boots.jpg';
-// Photo by Jonathan Gallegos on Unsplash
-import asyncImg from '../assets/img/mount-promise.jpg';
+import cookingClass from "../assets/img/cooking-class.jpg";
+import farmToTable from "../assets/img/farm-to-table.jpg";
+import foodAndWine from "../assets/img/food-wine.jpg";
+import brunchClub from "../assets/img/vegan-brunch-club.jpg";
 
 export const PROMOTIONS = [
-    {
-        id: 0,
-        name: 'Mountain Adventure',
-        image: breadCrumbImg,
-        featured: true,
-        description:
-            'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'
-    },
-    {
-        id: 1,
-        name: 'Into The Weeds',
-        image: weedsImg,
-        featured: false,
-        description:
-            '5 days deep in the Redux National Monument, far from the beaten path, with only a reducer in your backpack. Guide provided.'
-    },
-    {
-        id: 2,
-        name: 'Bootstrap Teardown',
-        image: bootsImg,
-        featured: false,
-        description: `In this weekend workshop, we'll rebuild your bootstraps from scratch, so you're ready for next-level excursions.`
-    },
-    {
-        id: 3,
-        name: 'Asynchronous Rendezvous',
-        image: asyncImg,
-        featured: false,
-        description:
-            'Meet up with your guide at the top of Promise Mountain. Or, try to. Good luck!'
-    }
+  {
+    id: 0,
+    name: "Vegan Cooking Classes",
+    image: cookingClass,
+    featured: true,
+    description:
+      "Engaging hands-on classes where participants learn to prepare a variety of delicious plant-based dishes. Expert guidance and practical techniques make vegan cooking accessible and enjoyable for all.",
+  },
+  {
+    id: 1,
+    name: "Farm to Table Tour",
+    image: farmToTable,
+    featured: false,
+    description:
+      "Guided tours to local organic farms, showcasing sustainable practices and connecting guests with the source of their food. Experience the farm-to-table journey and gain insights into the benefits of locally sourced ingredients.",
+  },
+  {
+    id: 2,
+    name: "Vegan Food and Wine Pairing",
+    image: foodAndWine,
+    featured: false,
+    description: `Discover the perfect harmony between vegan cuisine and a selection of fine wines. Indulge in thoughtfully curated pairings that elevate your dining experience and showcase the complementarity of plant-based flavors and quality vegan wines.`,
+  },
+  {
+    id: 3,
+    name: "Vegan Brunch Club",
+    image: brunchClub,
+    featured: false,
+    description:
+      "A vibrant gathering featuring a delectable vegan brunch menu. Enjoy a variety of mouthwatering plant-based dishes in a lively atmosphere, perfect for socializing and savoring the best of vegan cuisine.",
+  },
 ];
