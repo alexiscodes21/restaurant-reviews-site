@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Container, Navbar, NavbarBrand } from "reactstrap";
 import PlantopiaLogo from "./assets/img/plantopia.png";
-
+import RestaurantsList from "./features/restaurants/RestaurantsList";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           </NavbarBrand>
         </Container>
       </Navbar>
-      Plantopia
+      <RestaurantsList />
     </div>
   );
 }
