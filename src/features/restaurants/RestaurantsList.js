@@ -1,12 +1,13 @@
-import { RESTAURANTS } from "../../shared/RESTAURANTS";
-import { Row, Col } from 'reactstrap';
+import { Col, Row } from "reactstrap";
 import RestaurantCard from "./RestaurantCard";
+import { selectAllRestaurants } from "./restaurantsSlice";
 
 const RestaurantsList = () => {
+  const restaurants = selectAllRestaurants();
+
   return (
     <Row className="ms-auto">
-      {" "}
-      {RESTAURANTS.map((restaurant) => {
+      {restaurants.map((restaurant) => {
         return (
           <Col md="5" className="m-4" key={restaurant.id}>
             <RestaurantCard restaurant={restaurant} />
