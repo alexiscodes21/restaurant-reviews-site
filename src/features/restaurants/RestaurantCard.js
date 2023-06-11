@@ -1,11 +1,12 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 
-const RestaurantCard = (props) => {
+const RestaurantCard = ({ restaurant }) => {
+  const { image, name } = restaurant;
   return (
     <Card>
-      <CardImg width="100%" src={props.restaurant.image} alt={props.restaurant.name} />
+      <CardImg width="100%" src={image} alt={name} />
       <CardImgOverlay>
-        <CardTitle>{props.restaurant.name}</CardTitle>
+        <CardTitle>{name}</CardTitle>
       </CardImgOverlay>
     </Card>
   );
