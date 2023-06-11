@@ -3,7 +3,7 @@
   --brand-middle-color: #FF9966;
   --brand-dark-color: #964B00;
   --brand-gradient: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color), var(--brand-light-color));
-  --background-image: linear-gradient(#cec8ff, white);
+  --background-image: linear-gradient(var(--brand-middle-color), var(--brand-light-color));
   --background-w-opacity: rgba(0, 0, 0, 0.5);
   --body-font: "Open Sans", sans-serif;
   --headings-font: "Lobster", cursive;

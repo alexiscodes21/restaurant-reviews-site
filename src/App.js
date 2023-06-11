@@ -3,18 +3,15 @@ import './App.css';
 import { Container, Navbar, NavbarBrand } from "reactstrap";
 import PlantopiaLogo from "./assets/img/plantopia.png";
 import RestaurantsList from "./features/restaurants/RestaurantsList";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <Navbar dark color="primary" sticky="top" expand="md">
-        <Container>
-          <NavbarBrand href="/">
-            <img src={PlantopiaLogo} alt="Plantopia Logo" />
-          </NavbarBrand>
-        </Container>
-      </Navbar>
+      <Header />
       <RestaurantsList />
+      <Footer />
     </div>
   );
 }
