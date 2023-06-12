@@ -1,22 +1,18 @@
-import { Container, Row, Col, Button } from "reactstrap";
+import { useState } from 'react';
+import { Container, Row, Col } from "reactstrap";
 import RestaurantDetail from "../features/restaurants/RestaurantDetail";
 import RestaurantsList from "../features/restaurants/RestaurantsList";
-import { selectRandomRestaurant } from "../features/restaurants/restaurantsSlice";
+import { selectRestaurantById } from "../features/restaurants/restaurantsSlice";
 
 const RestaurantsDirectoryPage = () => {
-  let selectedRestaurant = selectRandomRestaurant();
-
-  const toggleRestaurant = () => {
-    selectedRestaurant = selectRandomRestaurant();
-    console.log(selectedRestaurant);
-  };
+  const [restaurantId, setRestaurantId] = useState(0);
+  const selectedRestaurant = selectRestaurantById(restaurantId);
 
   return (
     <Container>
-      {/* <Button onClick={() => toggleRestaurant()}>Select Random Restaurant</Button> */}
       <Row>
         <Col sm="5" md="7">
-          <RestaurantsList />
+          <RestaurantsList setRestaurantId={setRestaurantId}/>
         </Col>
         <Col sm="7" md="5">
           <RestaurantDetail restaurant={selectedRestaurant} />

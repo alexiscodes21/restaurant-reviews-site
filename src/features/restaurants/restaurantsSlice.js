@@ -4,6 +4,6 @@ import { RESTAURANTS } from "../../shared/RESTAURANTS";
    return RESTAURANTS;
  };
 
- export const selectRandomRestaurant = () => {
-     return RESTAURANTS[Math.floor(RESTAURANTS.length * Math.random())]
- };
+export const selectRestaurantById = (id) => {
+   return RESTAURANTS.find((restaurant) => restaurant.id === id)
+};
