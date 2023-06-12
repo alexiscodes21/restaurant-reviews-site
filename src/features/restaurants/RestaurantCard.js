@@ -6,7 +6,7 @@ const RestaurantCard = ({ restaurant }) => {
     <Card>
       <CardImg width="100%" src={image} alt={name} />
       <CardImgOverlay>
-        <CardTitle>{name}</CardTitle>
+        <CardTitle style={{ textAlign: "center"}}>{name}</CardTitle>
       </CardImgOverlay>
     </Card>
   );

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
       <NavbarBrand href="/">
-        <img src={Plantopia} alt="Plantopia Logo" />
+        <img src={Plantopia} alt="Plantopia Logo" style={{ marginLeft: 35 }} />
       </NavbarBrand>
     </Navbar>
   );
