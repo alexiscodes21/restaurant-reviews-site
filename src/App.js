@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RestaurantsDirectoryPage from "./pages/RestaurantsDirectoryPage";
+import RestaurantDetailPage from "./pages/RestaurantDetailPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="directory" element={<RestaurantsDirectoryPage />} />
+        <Route path="directory/:restaurantId" element={<RestaurantDetailPage />} />
       </Routes>
       <Footer />
     </div>

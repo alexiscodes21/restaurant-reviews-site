@@ -5,7 +5,7 @@ import { RESTAURANTS } from "../../shared/RESTAURANTS";
  };
 
 export const selectRestaurantById = (id) => {
-   return RESTAURANTS.find((restaurant) => restaurant.id === id)
+   return RESTAURANTS.find((restaurant) => restaurant.id === parseInt(id))
 };
 
 export const selectFeaturedRestaurant = () => {
