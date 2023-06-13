@@ -1,8 +1,8 @@
 :root {
-  --brand-light-color: #D3D3D3;
-  --brand-middle-color: #FF9966;
-  --brand-dark-color: #964B00;
-  --brand-gradient: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color), var(--brand-light-color));
+  --brand-light-color: #d3d3d3;
+  --brand-middle-color: #ff9966;
+  --brand-dark-color: #964b00;
+  --brand-gradient: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color));
   --background-image: linear-gradient(var(--brand-middle-color), var(--brand-light-color));
   --background-w-opacity: rgba(0, 0, 0, 0.5);
   --body-font: "Open Sans", sans-serif;
@@ -10,14 +10,14 @@
 }
 
 body {
-  font-family: var(--body-font)
+  font-family: var(--body-font);
 }
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: var(--headings-font)
+  font-family: var(--headings-font);
 }
 
 .card-title {
@@ -59,7 +59,7 @@ h2 {
 }
 
 .navbar-dark {
-  background-color: #901cad;
+  /* background-color: #901cad; */
   background-image: var(--brand-gradient);
   margin-bottom: 2rem;
   min-height: 8rem;
