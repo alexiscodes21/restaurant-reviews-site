@@ -4,7 +4,7 @@ const RestaurantDetail = ({ restaurant }) => {
   const { image, name, description } = restaurant;
 
   return (
-    <Col md="12" className="m-4">
+    <Col md="5" className="m-4">
       <Card>
         <CardImg top src={image} alt={name} />
         <CardBody>

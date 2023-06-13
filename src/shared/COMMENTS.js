@@ -1,4 +1,4 @@
-export const RESTAURANTS = [
+export const COMMENTS = [
   {
     id: 0,
     restaurantId: 0,
