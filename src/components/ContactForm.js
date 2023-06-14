@@ -1,5 +1,6 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
-import { Formik, Field, Form } from "formik";
+import { Formik, Field, Form, ErrorMessage } from "formik";
+import { validateContactForm } from "../utils/validateContactForm";
 
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -7,6 +8,7 @@ const ContactForm = () => {
     console.log("in JSON format:", JSON.stringify(values));
     resetForm();
   };
+
   return (
     <Formik
       initialValues={{
@@ -19,6 +21,7 @@ const ContactForm = () => {
         feedback: "",
       }}
       onSubmit={handleSubmit}
+      validate={validateContactForm}
     >
       <Form>
         <FormGroup row>
@@ -27,6 +30,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field name="firstName" placeholder="First Name" className="form-control" />
+            <ErrorMessage name="firstName">{(msg) => <p className="text-danger">{msg}</p>}</ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -35,6 +39,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field name="lastName" placeholder="Last Name" className="form-control" />
+            <ErrorMessage name="lastName">{(msg) => <p className="text-danger">{msg}</p>}</ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -43,6 +48,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field name="phoneNum" placeholder="Phone" className="form-control" />
+            <ErrorMessage name="phoneNum">{(msg) => <p className="text-danger">{msg}</p>}</ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -51,6 +57,7 @@ const ContactForm = () => {
           </Label>
           <Col md="10">
             <Field name="email" placeholder="Email" type="email" className="form-control" />
+            <ErrorMessage name="email">{(msg) => <p className="text-danger">{msg}</p>}</ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -73,13 +80,11 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <FormGroup row>
-            <Col md={{ size: 10, offset: 2 }}>
-              <Button type="submit" color="secondary">
-                Send Feedback
-              </Button>
-            </Col>
-          </FormGroup>
+          <Col md={{ size: 10, offset: 2 }}>
+            <Button type="submit" color="primary">
+              Send Feedback
+            </Button>
+          </Col>
         </FormGroup>
       </Form>
     </Formik>
