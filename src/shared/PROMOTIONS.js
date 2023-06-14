@@ -8,7 +8,7 @@ export const PROMOTIONS = [
     id: 0,
     name: "Vegan Cooking Classes",
     image: cookingClass,
-    featured: true,
+    featured: false,
     description:
       "Engaging hands-on classes where participants learn to prepare a variety of delicious plant-based dishes. Expert guidance and practical techniques make vegan cooking accessible and enjoyable for all.",
   },
@@ -31,7 +31,7 @@ export const PROMOTIONS = [
     id: 3,
     name: "Vegan Brunch Club",
     image: brunchClub,
-    featured: false,
+    featured: true,
     description:
       "A vibrant gathering featuring a delectable vegan brunch menu. Enjoy a variety of mouthwatering plant-based dishes in a lively atmosphere, perfect for socializing and savoring the best of vegan cuisine.",
   },
