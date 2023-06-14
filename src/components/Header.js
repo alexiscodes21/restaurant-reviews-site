@@ -11,7 +11,7 @@ const Header = () => {
     <Navbar dark color="primary" sticky="top" expand="md">
       <NavbarBrand href="/">
         <img src={Plantopia} alt="Plantopia Logo" style={{ marginLeft: 35 }} className="float-start" />
-        <h1 className="mt-2">Plantopia</h1>
+        <h1 className="mt-3">Plantopia</h1>
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>

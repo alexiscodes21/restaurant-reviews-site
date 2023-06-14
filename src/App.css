@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Open+Sans&display=swap');
 :root {
   --brand-light-color: #d3d3d3;
   --brand-middle-color: #ff9966;
   --brand-dark-color: #964b00;
-  --brand-gradient: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color));
-  --background-image: linear-gradient(var(--brand-middle-color), var(--brand-light-color));
+  --brand-gradient-1: linear-gradient(to right, var(--brand-dark-color), var(--brand-middle-color));
+  --brand-gradient-2: linear-gradient(var(--brand-middle-color), var(--brand-dark-color));
   --background-w-opacity: rgba(0, 0, 0, 0.5);
   --body-font: "Open Sans", sans-serif;
-  --headings-font: "Lobster", cursive;
+  --headings-font: "Kalam", cursive;
 }
 
 body {
@@ -26,11 +27,11 @@ h3,
 }
 
 h2 {
-  color: #3046c5;
+  color: var(--brand-dark-color)
 }
 
 .card-img-overlay .card-title {
-  color: white;
+  color: var(--brand-light-color);
   background-color: var(--background-w-opacity);
 }
 
@@ -41,9 +42,13 @@ h2 {
 }
 
 .site-footer {
-  background-image: var(--background-image);
+  background-image: var(--brand-gradient-2);
   padding: 20px 0;
   margin-top: 2rem;
+}
+
+.site-footer a {
+  color: var(--brand-light-color);
 }
 
 .navbar-brand {
@@ -59,8 +64,7 @@ h2 {
 }
 
 .navbar-dark {
-  /* background-color: #901cad; */
-  background-image: var(--brand-gradient);
+  background-image: var(--brand-gradient-1);
   margin-bottom: 2rem;
   min-height: 8rem;
 }
