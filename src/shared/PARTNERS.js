@@ -22,7 +22,7 @@ export const PARTNERS = [
   },
   {
     id: 2,
-    name: "Plant-based Fitness Studio",
+    name: "Plant-Based Fitness Studio",
     image: plantBasedFitnessStudio,
     featured: false,
     description:

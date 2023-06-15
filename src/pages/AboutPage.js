@@ -29,11 +29,11 @@ const AboutPage = () => {
                 <dt className="col-6">Founded</dt>
                 <dd className="col-6">January 5, 2015</dd>
                 <dt className="col-6">No. of Restaurants in 2023</dt>
-                <dd className="col-6">563</dd>
+                <dd className="col-6">27</dd>
                 <dt className="col-6">No. of Reviews in 2023</dt>
-                <dd className="col-6">2,958</dd>
+                <dd className="col-6">928</dd>
                 <dt className="col-6">Employees</dt>
-                <dd className="col-6">285</dd>
+                <dd className="col-6">485</dd>
               </dl>
             </CardBody>
           </Card>
